@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính điểm học sinh</title> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="asm3.js"></script>
+    <link rel="stylesheet" href="asm3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</head>
+<body> 
+    <div class=" container container-fluid">
+    <div class="head-tittle">
+        <h1>Class Marksheet</h1>
+    </div>
+    <div class="form-input" >
+    <form>
+        <div class="row input">
+            <div class="col-sm-12 col-md-4 in-lable">
+            <label for="name">Họ tên</label>
+            </div>
+            <div class="col-sm-12 col-md-8 in-lable">
+            <input type="text" name="nhap" id="name" class="in" required>
+            </div>
+        </div>
+        <div class="row input">
+            <div class="col-sm-12 col-md-4 in-lable">
+            <label for="math">Toán</label>
+            </div>
+            <div class="col-sm-12 col-md-8 ">
+            <input type="text" name="nhap" id="math" class="in" required>
+            </div>            
+        </div>
+        <div class="row input">
+            <div class="col-sm-12 col-md-4 in-lable">
+            <label for="phy">Lý</label>
+            </div>
+            <div class="col-sm-12 col-md-8">
+            <input type="text" name="nhap" id="phy" class="in" required>
+            </div>
+        </div>
+        <div class="row input">
+            <div class="col-sm-12 col-md-4">
+            <label for="che">Hóa</label>
+            </div>
+            <div class="col-sm-12 col-md-8">
+            <input type="text" name="nhap" id="che" class="in" required>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary " id="btn-nhap">Nhập</button>
+        </div>
+    </form>
+        </div>
+    </div>
+    <table id="result">
+        <tr>
+            <th>
+                STT
+            </th>                        
+            <th>
+                Họ tên
+            </th>            
+            <th>
+                Toán
+            </th>            
+            <th>
+                Lý
+            </th>            
+            <th>
+                Hóa
+            </th>
+            <th>
+                Trung bình
+            </th>
+        </tr>
+    </table>
+    <div class="row">
+        <div class="col-sm-4">
+        <button type="button" class="btn btn-primary btn-bot" id="btn-tb">Tính điểm trung bình</button>
+        </div>
+        <div class="col-sm-4">
+        <button type="button" class="btn btn-primary btn-bot" id="btn-hsg">Hiển thị học sinh giỏi</button>
+        </div>    
+        <div class="col-sm 4">
+            <button type="button" class="btn btn-primary btn-bot" id="btn-del">Xóa sinh viên theo STT</button>
+        </div>
+    </div>
+</div>   
+</body>
+</html>
